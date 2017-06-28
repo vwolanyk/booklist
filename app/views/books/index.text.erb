@@ -1,0 +1,5 @@
+<%@count = 1 %>
+<% @books.each do |book| %>
+<%=  " #{@count}. #{book.title}, Author: #{book.author}"  %>
+<% @count += 1 %>
+<% end %>
